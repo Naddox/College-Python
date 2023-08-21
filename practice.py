@@ -1,17 +1,14 @@
-transactions = [1,2,3]
+def ordNumber(self):
+        ordCount += 1
+        self.number = ordCount
 
-def transCheck():
-    """Function that checks if any values are contained in the list
-
-    Returns:
-        True when at least 1 value is in list
-        False when list contains no values
-    """
-    if any(transactions):
-        return True
-    else:
-        return False
+class MyOrder:
+    ordCount = 0
     
+    def __init__(self, type, amount, number):
+        self.type = input()
+        self.amount = input()
+        self.number = ordNumber()
 
-
-print(transCheck())
+    def __str__(self):
+        return f"{self.name}  {self.age}"
